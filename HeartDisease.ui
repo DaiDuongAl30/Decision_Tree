@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>969</width>
+    <height>475</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="predictButt">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>330</y>
+      <width>75</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Predict</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="sex">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>110</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="age">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>80</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string>Adult</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Adult</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Middle Age</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Old</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="chestPain">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>140</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="restRB">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>170</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Low</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Normal</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>High</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="chol">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>200</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Normal</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>High Risk</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Extreme</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="fastBS">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>80</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="resElec">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>170</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="thalach">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>110</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Low</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Normal</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>High</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="exang">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>140</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="oldpeak">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>170</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Low</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Normal</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>High</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="slope">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>110</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="ca">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>80</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="thal">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>140</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>380</y>
+      <width>113</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>80</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Age: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>110</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sex:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>140</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Chest Pain Type:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>170</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Resting Blood Presure:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>200</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Serum Cholesterol:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>80</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fasting Blood Sugar:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>170</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Resting Electrocardiographic Results:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>110</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Maximum Heart Rate:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>140</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exercise Induced Anginan:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>170</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string> ST depression:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>110</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Slope of peak:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>80</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Number of major vessels:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>140</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Thalium Stress Type:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>20</y>
+      <width>341</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Heart Disease Predict Application</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>390</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Result:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="chooseRules">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>220</y>
+      <width>81</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Choose Rules</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ruleName">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>220</y>
+      <width>281</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openRules">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>250</y>
+      <width>81</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>969</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
